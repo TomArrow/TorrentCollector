@@ -5,8 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TorrentCollector"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="200" Width="500">
     <Grid>
-        
+        <StackPanel>
+            <Button FontSize="20" x:Name="btnSelectTextFile" Click="BtnSelectTextFile_Click">Choose text file with line-separated hashes</Button>
+            <Button FontSize="20" x:Name="btnSelectTorrentFolder" Click="BtnSelectTorrentFolder_Click">Choose folder with torrent files</Button>
+            <Button IsEnabled="False" FontSize="50" x:Name="btnZipIt" Click="BtnZipIt_Click">Zip it!</Button>
+            
+        </StackPanel>
     </Grid>
 </Window>
